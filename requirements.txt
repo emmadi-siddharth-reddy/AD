@@ -5,3 +5,4 @@ streamlit
 Flask
 pandas
 scikit-learn
+gunicorn
