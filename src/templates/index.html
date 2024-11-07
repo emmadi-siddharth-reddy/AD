@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation System</title>
+</head>
+<body>
+    <h1>Movie Recommendation System</h1>
+    <form method="post">
+        <label for="movie">Enter the movie you liked:</label>
+        <input type="text" id="movie" name="movie">
+        <input type="submit" value="Get Recommendations">
+    </form>
+    
+    {% if recommendations %}
+        <h2>Recommended Movies:</h2>
+        <ul>
+            {% for movie in recommendations %}
+                <li>{{ movie.title }} - Rating: {{ movie.rating }}</li>
+            {% endfor %}
+        </ul>
+
+        <h2>Bar Plot of Movie Ratings:</h2>
+        {% if bar_plot %}
+            <img src="data:image/png;base64,{{ bar_plot }}" alt="Bar Plot">
+        {% endif %}
+
+        <h2>Pie Chart of Ratings Distribution:</h2>
+        {% if pie_chart %}
+            <img src="data:image/png;base64,{{ pie_chart }}" alt="Pie Chart">
+        {% endif %}
+    {% endif %}
+</body>
+</html>
