@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Vibrant gradient background */
+    color: #fff; /* Text color to contrast against the vibrant background */
+}
+
+h1 {
+    color: #fff;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to make it stand out */
+}
+
+form {
+    margin: 20px auto;
+    padding: 15px;
+    width: 80%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+label, input[type="text"], input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #333; /* Adjusting color for readability */
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #e55a4f;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+    color: #333;
+}
